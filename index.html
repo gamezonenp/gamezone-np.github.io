@@ -8,68 +8,70 @@
 </head>
 <body>
 
-<header>
-  <h1>Free Fire Diamond Top-Up</h1>
-  <p>Secure UID Top-Up • Nepal</p>
+<!-- HEADER -->
+<header class="top-header">
+  <h1>🔥 Gamezone NP</h1>
+  <p>Free Fire Diamond Top-Up • Fast & Secure</p>
 </header>
 
+<!-- UID INPUT -->
 <section class="uid-box">
   <h3>Enter Free Fire UID</h3>
-  <input id="uid" placeholder="Free Fire UID" />
+  <input id="uid" placeholder="e.g. 1234567890" />
+  <small>⚠️ UID is required before ordering</small>
 </section>
 
-<section class="grid">
+<!-- PRODUCTS -->
+  <!-- Diamonds -->
+  <section class="grid"><div class="card" onclick="openPopup('50 Diamonds',65)">💎 50 Diamonds <span>Rs 65</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('115 Diamonds',100)">💎 115 Diamonds <span>Rs 100</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('240 Diamonds',190)">💎 240 Diamonds <span>Rs 190</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('355 Diamonds',280)">💎 355 Diamonds <span>Rs 280</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('480 Diamonds',380)">💎 480 Diamonds <span>Rs 380</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('610 Diamonds',500)">💎 610 Diamonds <span>Rs 500</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('725 Diamonds',580)">💎 725 Diamonds <span>Rs 580</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('960 Diamonds',670)">💎 960 Diamonds <span>Rs 670</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('965 Diamonds',760)">💎 965 Diamonds <span>Rs 760</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('1090 Diamonds',850)">💎 1090 Diamonds <span>Rs 850</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('1240 Diamonds',940)">💎 1240 Diamonds <span>Rs 940</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('1480 Diamonds',1120)">💎 1480 Diamonds <span>Rs 1120</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('1595 Diamonds',1280)">💎 1595 Diamonds <span>Rs 1280</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('1720 Diamonds',1330)">💎 1720 Diamonds <span>Rs 1330</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('1880 Diamonds',1550)">💎 1880 Diamonds <span>Rs 1550</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('2090 Diamonds',1680)">💎 2090 Diamonds <span>Rs 1680</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('2530 Diamonds',2170)">💎 2530 Diamonds <span>Rs 2170</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('3770 Diamonds',2940)">💎 3770 Diamonds <span>Rs 2940</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('5650 Diamonds',3940)">💎 5650 Diamonds <span>Rs 3940</span></div></section>
+  <section class="grid"><div class="card" onclick="openPopup('10120 Diamonds',7400)">💎 10120 Diamonds <span>Rs 7400</span></div></section>
 
-  <div class="card"><h3>50 Diamonds</h3><p class="price">Rs 65</p><button onclick="createOrder('50 Diamonds',65)">Order</button></div>
-  <div class="card"><h3>115 Diamonds</h3><p class="price">Rs 100</p><button onclick="createOrder('115 Diamonds',100)">Order</button></div>
-  <div class="card"><h3>240 Diamonds</h3><p class="price">Rs 190</p><button onclick="createOrder('240 Diamonds',190)">Order</button></div>
-  <div class="card"><h3>355 Diamonds</h3><p class="price">Rs 280</p><button onclick="createOrder('355 Diamonds',280)">Order</button></div>
-  <div class="card"><h3>480 Diamonds</h3><p class="price">Rs 380</p><button onclick="createOrder('480 Diamonds',380)">Order</button></div>
-  <div class="card"><h3>610 Diamonds</h3><p class="price">Rs 500</p><button onclick="createOrder('610 Diamonds',500)">Order</button></div>
-  <div class="card"><h3>725 Diamonds</h3><p class="price">Rs 580</p><button onclick="createOrder('725 Diamonds',580)">Order</button></div>
-  <div class="card"><h3>960 Diamonds</h3><p class="price">Rs 670</p><button onclick="createOrder('960 Diamonds',670)">Order</button></div>
-  <div class="card"><h3>965 Diamonds</h3><p class="price">Rs 760</p><button onclick="createOrder('965 Diamonds',760)">Order</button></div>
-  <div class="card"><h3>1090 Diamonds</h3><p class="price">Rs 850</p><button onclick="createOrder('1090 Diamonds',850)">Order</button></div>
-  <div class="card"><h3>1240 Diamonds</h3><p class="price">Rs 940</p><button onclick="createOrder('1240 Diamonds',940)">Order</button></div>
-  <div class="card"><h3>1480 Diamonds</h3><p class="price">Rs 1120</p><button onclick="createOrder('1480 Diamonds',1120)">Order</button></div>
-  <div class="card"><h3>1595 Diamonds</h3><p class="price">Rs 1280</p><button onclick="createOrder('1595 Diamonds',1280)">Order</button></div>
-  <div class="card"><h3>1720 Diamonds</h3><p class="price">Rs 1330</p><button onclick="createOrder('1720 Diamonds',1330)">Order</button></div>
-  <div class="card"><h3>1880 Diamonds</h3><p class="price">Rs 1550</p><button onclick="createOrder('1880 Diamonds',1550)">Order</button></div>
-  <div class="card"><h3>2090 Diamonds</h3><p class="price">Rs 1680</p><button onclick="createOrder('2090 Diamonds',1680)">Order</button></div>
-  <div class="card"><h3>2530 Diamonds</h3><p class="price">Rs 2170</p><button onclick="createOrder('2530 Diamonds',2170)">Order</button></div>
-  <div class="card"><h3>3770 Diamonds</h3><p class="price">Rs 2940</p><button onclick="createOrder('3770 Diamonds',2940)">Order</button></div>
-  <div class="card"><h3>5650 Diamonds</h3><p class="price">Rs 3940</p><button onclick="createOrder('5650 Diamonds',3940)">Order</button></div>
-  <div class="card"><h3>10120 Diamonds</h3><p class="price">Rs 7400</p><button onclick="createOrder('10120 Diamonds',7400)">Order</button></div>
-
-  <div class="card"><h3>Weekly Membership</h3><p class="price">Rs 230</p><button onclick="createOrder('Weekly Membership',230)">Order</button></div>
-  <div class="card"><h3>Monthly Membership</h3><p class="price">Rs 980</p><button onclick="createOrder('Monthly Membership',980)">Order</button></div>
-
+  <!-- Memberships -->
+  <div class="card membership" onclick="openPopup('Weekly Membership',230)">⭐ Weekly Membership <span>Rs 230</span></div></section>
+  <div class="card membership" onclick="openPopup('Monthly Membership',980)">👑 Monthly Membership <span>Rs 980</span></div>
 </section>
 
-
-
+<!-- PAYMENT -->
 <section class="payment">
-  <h3>Pay via QR</h3>
-  <img src="esewa.jpg.png">
-  <img src="khalti.jpg.png"/>
+  <h3>Pay via eSewa / Khalti</h3>
+  <div class="qr">
+    <img src="esewa.jpg.png">
+    <img src="khalti.jpg.png">
+  </div>
+  <p>After payment, click Confirm to send WhatsApp message</p>
 </section>
 
-<script src="js/app.js"></script>
+<!-- POPUP -->
+<div id="overlay" class="overlay"></div>
 
-<!-- Order Confirmation Popup -->
-<div id="overlay" class="overlay hidden"></div>
-
-<div id="orderPopup" class="popup hidden">
-  <h3>Confirm Your Order</h3>
+<div id="orderPopup" class="popup">
+  <h3>Confirm Order</h3>
   <p><b>UID:</b> <span id="pUid"></span></p>
   <p><b>Package:</b> <span id="pProduct"></span></p>
   <p><b>Amount:</b> Rs <span id="pPrice"></span></p>
 
-  <div class="popup-buttons">
-    <button class="confirm" onclick="confirmOrder()">Confirm & WhatsApp</button>
-    <button class="cancel" onclick="closePopup()">Cancel</button>
-  </div>
+  <button class="confirm" onclick="confirmOrder()">Confirm & WhatsApp</button>
+  <button class="cancel" onclick="closePopup()">Cancel</button>
 </div>
 
+<script src="js/app.js"></script>
 </body>
 </html>
