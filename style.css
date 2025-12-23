@@ -1,128 +1,109 @@
 body {
-  margin:0;
-  font-family: Arial;
-  background:#0b0f2a;
-  color:#fff;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top, #1a1f4b, #050716);
+  color: #fff;
 }
 
-header {
-  padding:20px;
-  text-align:center;
-  background:linear-gradient(90deg,#6a00ff,#00c6ff);
+/* HEADER */
+.top-header {
+  text-align: center;
+  padding: 25px;
+  background: linear-gradient(90deg, #6a00ff, #00c6ff);
 }
 
+/* UID BOX */
 .uid-box {
-  max-width:500px;
-  margin:20px auto;
-  background:#141a3a;
-  padding:20px;
-  border-radius:10px;
+  max-width: 420px;
+  margin: 25px auto;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
 }
 
 .uid-box input {
-  width:100%;
-  padding:12px;
-  border:none;
-  border-radius:6px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
 }
 
+/* GRID */
 .grid {
-  max-width:900px;
-  margin:40px auto;
-  display:grid;
-  gap:20px;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
 }
 
 .card {
-  background:#141a3a;
-  padding:20px;
-  border-radius:10px;
-  text-align:center;
+  background: linear-gradient(145deg, #1a2157, #0e1238);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
 }
 
-.price {
-  color:#ffd54f;
-  font-size:20px;
+.card span {
+  display: block;
+  margin-top: 8px;
+  color: #ffd54f;
+  font-weight: bold;
 }
 
-button {
-  padding:10px 16px;
-  border:none;
-  border-radius:6px;
-  background:#ff5722;
-  color:#fff;
-  cursor:pointer;
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
 }
 
+.membership {
+  border: 2px solid gold;
+}
+
+/* PAYMENT */
 .payment {
-  text-align:center;
-  margin:40px;
+  text-align: center;
+  margin: 60px 0;
 }
 
-.payment img {
-  width:200px;
-  margin:10px;
-  border-radius:8px;
+.qr img {
+  width: 180px;
+  margin: 10px;
+  border-radius: 12px;
 }
 
+/* POPUP */
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-  z-index: 1000;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: none;
 }
 
 .popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%,-50%);
   background: #141a3a;
   padding: 25px;
-  width: 90%;
-  max-width: 360px;
-  border-radius: 12px;
-  z-index: 1001;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  border-radius: 14px;
+  display: none;
+  width: 300px;
 }
 
-.popup h3 {
-  margin-bottom: 15px;
-}
-
-.popup p {
-  margin: 6px 0;
-}
-
-.popup-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.popup-buttons button {
-  flex: 1;
+.popup button {
+  width: 100%;
+  margin-top: 10px;
   padding: 10px;
+  border-radius: 8px;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
 }
 
-.confirm {
-  background: #ff5722;
-  color: #fff;
-}
-
-.cancel {
-  background: #555;
-  color: #fff;
-}
-
-.hidden {
-  display: none;
-}
+.confirm { background: #25d366; }
+.cancel { background: #ff5252; }
