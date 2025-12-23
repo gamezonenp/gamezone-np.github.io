@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gamezone NP – Free Fire Top-Up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Free Fire Diamond Top-Up</h1>
+  <p>Secure UID Top-Up • Nepal</p>
+</header>
+
+<section class="uid-box">
+  <h3>Enter Free Fire UID</h3>
+  <input id="uid" placeholder="Free Fire UID" />
+</section>
+
+<section class="grid">
+
+  <div class="card"><h3>50 Diamonds</h3><p class="price">Rs 65</p><button onclick="createOrder('50 Diamonds',65)">Order</button></div>
+  <div class="card"><h3>115 Diamonds</h3><p class="price">Rs 100</p><button onclick="createOrder('115 Diamonds',100)">Order</button></div>
+  <div class="card"><h3>240 Diamonds</h3><p class="price">Rs 190</p><button onclick="createOrder('240 Diamonds',190)">Order</button></div>
+  <div class="card"><h3>355 Diamonds</h3><p class="price">Rs 280</p><button onclick="createOrder('355 Diamonds',280)">Order</button></div>
+  <div class="card"><h3>480 Diamonds</h3><p class="price">Rs 380</p><button onclick="createOrder('480 Diamonds',380)">Order</button></div>
+  <div class="card"><h3>610 Diamonds</h3><p class="price">Rs 500</p><button onclick="createOrder('610 Diamonds',500)">Order</button></div>
+  <div class="card"><h3>725 Diamonds</h3><p class="price">Rs 580</p><button onclick="createOrder('725 Diamonds',580)">Order</button></div>
+  <div class="card"><h3>960 Diamonds</h3><p class="price">Rs 670</p><button onclick="createOrder('960 Diamonds',670)">Order</button></div>
+  <div class="card"><h3>965 Diamonds</h3><p class="price">Rs 760</p><button onclick="createOrder('965 Diamonds',760)">Order</button></div>
+  <div class="card"><h3>1090 Diamonds</h3><p class="price">Rs 850</p><button onclick="createOrder('1090 Diamonds',850)">Order</button></div>
+  <div class="card"><h3>1240 Diamonds</h3><p class="price">Rs 940</p><button onclick="createOrder('1240 Diamonds',940)">Order</button></div>
+  <div class="card"><h3>1480 Diamonds</h3><p class="price">Rs 1120</p><button onclick="createOrder('1480 Diamonds',1120)">Order</button></div>
+  <div class="card"><h3>1595 Diamonds</h3><p class="price">Rs 1280</p><button onclick="createOrder('1595 Diamonds',1280)">Order</button></div>
+  <div class="card"><h3>1720 Diamonds</h3><p class="price">Rs 1330</p><button onclick="createOrder('1720 Diamonds',1330)">Order</button></div>
+  <div class="card"><h3>1880 Diamonds</h3><p class="price">Rs 1550</p><button onclick="createOrder('1880 Diamonds',1550)">Order</button></div>
+  <div class="card"><h3>2090 Diamonds</h3><p class="price">Rs 1680</p><button onclick="createOrder('2090 Diamonds',1680)">Order</button></div>
+  <div class="card"><h3>2530 Diamonds</h3><p class="price">Rs 2170</p><button onclick="createOrder('2530 Diamonds',2170)">Order</button></div>
+  <div class="card"><h3>3770 Diamonds</h3><p class="price">Rs 2940</p><button onclick="createOrder('3770 Diamonds',2940)">Order</button></div>
+  <div class="card"><h3>5650 Diamonds</h3><p class="price">Rs 3940</p><button onclick="createOrder('5650 Diamonds',3940)">Order</button></div>
+  <div class="card"><h3>10120 Diamonds</h3><p class="price">Rs 7400</p><button onclick="createOrder('10120 Diamonds',7400)">Order</button></div>
+
+  <div class="card"><h3>Weekly Membership</h3><p class="price">Rs 230</p><button onclick="createOrder('Weekly Membership',230)">Order</button></div>
+  <div class="card"><h3>Monthly Membership</h3><p class="price">Rs 980</p><button onclick="createOrder('Monthly Membership',980)">Order</button></div>
+
+</section>
+
+
+
+<section class="payment">
+  <h3>Pay via QR</h3>
+  <img src="esewa.jpg.png">
+  <img src="khalti.jpg.png"/>
+</section>
+
+<script src="js/app.js"></script>
+
+<!-- Order Confirmation Popup -->
+<div id="overlay" class="overlay hidden"></div>
+
+<div id="orderPopup" class="popup hidden">
+  <h3>Confirm Your Order</h3>
+  <p><b>UID:</b> <span id="pUid"></span></p>
+  <p><b>Package:</b> <span id="pProduct"></span></p>
+  <p><b>Amount:</b> Rs <span id="pPrice"></span></p>
+
+  <div class="popup-buttons">
+    <button class="confirm" onclick="confirmOrder()">Confirm & WhatsApp</button>
+    <button class="cancel" onclick="closePopup()">Cancel</button>
+  </div>
+</div>
+
+</body>
+</html>
